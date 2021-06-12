@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body{
+	margin: 0;
+}
+
+
+#list_title{
+	font: Arial;
+	color: purple !important;
+}
+
+#list_table{
+	margin: 0;
+	width: 100%;
+	 border-collapse: collapse;
+	 
+}
+
+#list_table td, #list_table th{
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+#list_table th{
+	text-align: center;
+	background-color: #4CAF50;
+	color: white;
+}

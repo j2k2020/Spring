@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.spring_semi_proejct.myProject.IMemberDAO">
+<resultMap type="com.spring_semi_proejct.myProject.MemberVO"  id="MemResult">
+<result  property="memName"  column="memName" />
+<result  property="id"  column="id" />
+<result  property="pw"  column="pw" />
+<result  property="memEmail"  column="memEmail" />
+<result  property="memTel"  column="memTel" />
+<result  property="memGender"  column="memGender" />
+<result  property="memAge"  column="memAge" />
+</resultMap>
+
+<!-- 리스트가 잘 넘어오나 확인 -->
+<select id="memberList" resultMap="MemResult">
+SELECT * FROM member 
+</select>
+
+<!-- readMemberID -->
+<select id="readMemberID" resultMap="MemResult" parameterType="String">
+SELECT * FROM member where id=#{id}
+</select>
+
+<!-- id,pw 받아서 로그인 -->
+<select id="homeloginCheck" resultMap="MemResult" parameterType="hashmap">
+SELECT * FROM member WHERE id=#{id} AND pw=#{pw}
+</select>
+
+
+<!-- id 중복 검사 -->
+<select id="idCheck" resultMap="MemResult" parameterType="String">
+SELECT id FROM member WHERE id=#{id}
+</select>
+
+
+<!-- 회원등록(회원가입) -->
+<insert id="insertMember" parameterType="com.spring_semi_proejct.myProject.MemberVO">
+INSERT INTO member(memName,id,pw,memEmail,memTel,memGender,memAge)
+VALUES (#{memName}, #{id}, #{pw}, #{memEmail}, #{memTel}, #{memGender}, #{memAge})
+</insert>
+
+
+</mapper>  
+
+
+

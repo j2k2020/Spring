@@ -1,0 +1,22 @@
+@charset "UTF-8";
+body{
+	background-color: orange;
+}
+
+h3{
+	color: purple;
+	text-align: center;
+	
+}
+
+#list_table{
+	margin: 5px;
+	border: 3px solid purple;
+	border-radius: 10px 10px 10px 10px;
+	text-align: center;
+}
+
+#list_table th{
+	background-color: green;
+	color: white;
+}

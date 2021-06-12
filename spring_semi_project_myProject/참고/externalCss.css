@@ -1,0 +1,109 @@
+@charset "UTF-8";
+#wrap{
+	margin: 0 auto; /*가운데 정렬*/
+	width: 800px; /*가운데 정렬하기 위해서는 width값이 있어야 함*/
+	text-align: center; /*wrap 안의 모든 내용을 가운데 정렬*/
+	background: white;
+	
+}
+
+#mainMenuBox{
+	height: 35px;
+	line-height: 35px; /*줄 간격- 수작으로 가운데 정렬 효과 */
+	background: black; /*＃333;*/
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#mainMenuBox ul{
+	padding-left: 0;
+	margin: 0;
+	list-style: none; /*type없음*/
+}
+
+#mainMenuBox li{
+	float: left;
+	text-align: center;
+	width: 25%;
+}
+
+#mainMenuBox a{
+	text-decoration: none; /*<a>태그 밑줄 없애기*/
+	color: white;
+	display: block; /*글자를 박스로 묶어서 잡아줌*/
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#mainMenuBox a:hover { /*각 메뉴 항목에 마우스*/
+	color: red;
+	text-decoration: underline;
+	background: black;
+}
+
+table{
+	margin: 0 auto;
+	width: 600px;
+	margin-bottom: 30px;
+}
+
+#prdName{
+	color: blue; /*글자색*/
+	font-weight: bold; /*굵게*/
+}
+
+#price{
+	color: red;
+}
+
+.box{
+	border: solid 1px gray;
+	display: inline-block;
+	width: 320px;
+	height: 150px;
+	font-size: small;
+	border-radius: 10px; /*모서리 둥글게 정리*/
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 10px;
+	text-align: left;
+}
+
+.box a{
+	text-decoration: none; /*box태그 안의 a의 태그 내용만 밑줄 제거*/
+}
+.box a:hover {
+	/* elevation: below; */
+	color: red;
+	text-decoration: underline; /*각 <a>태그 밑줄 보이기*/
+}
+
+img{
+	margin-bottom: 20px;
+}
+
+h4, hr{margin-bottom: 10px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

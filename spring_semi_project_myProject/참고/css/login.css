@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+.wrap {
+	margin: 0 auto;
+	width:800px; 
+	height: 600px;
+	text-align: center;
+}
+
+.bg-text{
+	margin: 0 auto;
+	padding: 10px;
+	
+	width: 700px;
+	height: 500px;
+	border-width: thick;
+	border-style: dashed;
+	border-color: purple;
+	border-radius: 20px;
+}
+
+#title{
+	color: purple;
+	margin-top: 60px;
+	margin-bottom: 20px;
+	padding-top: 30px;
+}
+
+#loginForm{
+	margin: auto;
+	padding-top: 25px;
+}
+
+#table1{
+	margin: 0 auto;
+	width: 600px;
+	/* margin-bottom: 20px; */
+}
+
+#table2 {
+	margin: auto;
+	margin-top: 10px;
+	padding-top: 20px;
+}
